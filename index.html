@@ -1,45 +1,131 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Next-generation of the non-destructive, node-based 2D image graphics editor. Join us in planning/development for the next-generation of Gimel Studio to make it a truly usable tool for Photographers, 3D artists and anyone with an image to edit!">
+    <title>Gimel Studio - Open-source, non-destructive 2D image graphics editor</title>
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Alef:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <link href="css/main.css" rel="stylesheet">
-
-    <title>Gimel Studio - Non-destructive, node-based 2D image graphics editor</title>
-    <meta name="description" content="Next-generation of the non-destructive, node-based 2D image graphics editor. We're currently planning for the next step of Gimel Studio to make it a truly usable editor for beginners and pros alike">
-    <script type="text/javascript">
-      (function(c,l,a,r,i,t,y){
-          c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-          t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-          y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-      })(window, document, "clarity", "script", "66ynp1dg23");
-    </script>
-  </head>
-  <body>
-    <div class="container">
-      <div class="row my-4 text-center mx-auto">
-        <div class="col-12 col-md-10 mx-auto">
-          <img class="mx-auto img-fluid" src="img/logo.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/pure/pure-min.css">
+    <link rel="stylesheet" href="css/pure/grids-responsive-min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="custom-navbar-wrapper pure-g" id="menu">
+        <div class="pure-u-1 pure-u-md-3-24">
+            <div class="pure-menu">
+                <a href="/" class="pure-menu-heading custom-brand"><img class="logo-brand" src="img/icon.png"></a>
+                <a href="#" class="custom-toggle" id="toggle"><s class="bar"></s><s class="bar"></s></a>
+            </div>
         </div>
-        <h1 class="display-6 mx-auto font-weight-bold text-dark">We're planning for the next step of Gimel Studio!</h1>
-        <h2 class="lead text-muted col-12 col-md-8 m-auto">Join us in planning for the next-generation of the non-destructive, node-based 2D image graphics editor. </h2>
-      </div>
-      <div class="row my-4 text-center mx-auto">
-        <a class="my-2" href="https://github.com/GimelStudio">
-          <img alt="GitHub Org's stars" src="https://img.shields.io/github/stars/GimelStudio?style=social">
-        </a>
-        <a class="my-2" href="https://discord.gg/RqwbDrVDpK">
-          <img src="https://img.shields.io/discord/790587396835508265.svg?logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2" alt="Discord invite" />
-        </a>
-        <a class="link-secondary my-3" href="https://correctsyntax.com/projects/gimel-studio/">
-          Download original version <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="14" height="14" fill="#6c757d"><path fill="none" d="M0 0h24v24H0z"/><path d="M10 6v2H5v11h11v-5h2v6a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h6zm11-3v9l-3.794-3.793-5.999 6-1.414-1.414 5.999-6L12 3h9z"/></svg>
-        </a>
-      </div>
+        <div class="pure-u-1 pure-u-md-3-24">
+            <div class="pure-menu pure-menu-horizontal custom-can-transform menu-bar-items">
+                <ul class="pure-menu-list">
+                    <li class="pure-menu-item"><a href="https://github.com/Correct-Syntax/Gimel-Studio/#features" class="pure-menu-link">Features</a></li>
+                    <li class="pure-menu-item"><a href="https://github.com/Correct-Syntax/Gimel-Studio/releases/tag/v0.5.3-beta" class="pure-menu-link">Download</a></li>
+                    <li class="pure-menu-item"><a href="mailto:gimelstudiodev@gmail.com" class="pure-menu-link">Support</a></li>
+                    <li class="pure-menu-item"><a href="https://github.com/GimelStudio/GimelStudio" class="pure-menu-link">Get Involved</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-  </body>
+    <div class="main-hero">
+        <h1>Non-destructive, 2D image editor focused on simplicity, speed, elegance and usability.</h1>
+        <h2>Join us in planning/development for the next-generation of Gimel Studio to make it a truly usable tool for Photographers, 3D artists and anyone with an image to edit!</h2>
+        <a class="button-primary pure-button" href="#goals">Project Goals</a>
+        <a class="button-secondary-light pure-button" href="https://github.com/GimelStudio/GimelStudio">Get Involved <i class="ri-arrow-right-circle-fill"></i></a>
+        <div class="pure-g section">
+            <div class="pure-u-1 pure-u-sm-1-3"> 
+                <i class="ri-open-source-line ri-3x"></i>
+                <strong>Open Source</strong>
+            </div>
+            <div class="pure-u-1 pure-u-sm-1-3">
+                <i class="ri-node-tree ri-3x"></i>
+                <strong>Node Based</strong>
+            </div>
+            <div class="pure-u-1 pure-u-sm-1-3">
+                <i class="ri-image-2-line ri-3x"></i>
+                <strong>Image Editing</strong>
+            </div>
+        </div>
+    </div>
+    <div class="release-section">
+        <div class="pure-g">
+            <div class="pure-u-1 pure-u-lg-2-5">
+                <h3>Gimel Studio v0.5.3 beta has been released!</h3>
+                <p>Try the current version of Gimel Studio from the v0.5.x series -an experimental prototype which we hope to greatly improve upon in the next-generation of Gimel Studio.</p>
+                <a class="button-primary pure-button" href="https://github.com/Correct-Syntax/Gimel-Studio/releases/tag/v0.5.3-beta">Downloads</a>
+                <a class="button-secondary pure-button" href="https://gimel-studio.readthedocs.io/en/latest/release_notes/0.5.3.html">What's New <i class="ri-arrow-right-circle-fill"></i></a>
+            </div>
+            <div class="pure-u-1 pure-u-lg-3-5">
+                <img class="pure-img" src="img/gimel-studio-v0.5.3-beta.png">
+            </div>
+        </div>
+    </div>
+    <div id="goals" class="goals-section">
+        <div class="header">
+            <h4>Goals for the Next Generation of Gimel Studio</h4>
+            <p>This is work-in-progress and is subject to change. Some features listed here are implemented already, either fully or in part, in the v0.5.x series of Gimel Studio</p>
+        </div>
+        <div class="pure-g goals">
+            <div class="pure-u-1 pure-u-md-1-3"> 
+                <h5>Professional File Format Support</h5>
+                <p>OpenImageIO will be used for image IO in Gimel Studio and  is a library for reading, writing, and processing images in a wide variety of file formats. It is used in professional, large-scale visual effects and feature film animation, and it is used ubiquitously by large VFX studios, as well as incorporated into many commercial products.</p>
+            </div>
+            <div class="pure-u-1 pure-u-md-1-3">
+                <h5>Python API for Custom Nodes</h5>
+                <p>At the core of Gimel Studio will be a powerful Python + GLSL shader API for users to script their own custom nodes. The custom nodes will be treated like plugins and will have a Node Manager to allow users to choose which nodes they want for their paticular installation.</p>
+            </div>
+            <div class="pure-u-1 pure-u-md-1-3">
+                <h5>Non-Destructive Workflow</h5>
+                <p> Gimel Studio will have a non-destructive workflow, powered by nodes -by default. A major advantage of Gimel Studio and other node-based editing tools is the possibility to always adjust the final result by editing values in any step of the process. Because each modification is stored inside a single node, you can target your changes and minimize wasted time.</p>
+            </div>
+        </div>
+        <div class="pure-g goals">
+            <div class="pure-u-1 pure-u-md-1-3"> 
+                <h5>16-bit Support and Color Management</h5>
+                <p>We will be aiming to support a 16-bit pipeline and color management via OpenImageIO and OpenColorIO.</p>
+            </div>
+            <div class="pure-u-1 pure-u-md-1-3">
+                <h5>Seamless Software Integrations</h5>
+                <p>Gimel Studio's aim is not to neccessarily be a full replacement to all other graphics software, but to be a non-destructive 2d editor worthy to be a seamless suplement/alternative workflow to tools like Blender, GIMP, Krita, MyPaint, DarkTable, etc. Integration via a Blender addon, software file-format support, etc is planned.</p>
+            </div>
+            <div class="pure-u-1 pure-u-md-1-3">
+                <h5>GPU and CPU Processing</h5>
+                <p>We plan to use GLSL shaders to leverage GPU and CPU processing while being seamlessly cross-platform on Windows, Linux and MacOs (for 64-bit systems).</p>
+            </div>
+        </div>
+        <div class="pure-g goals">
+            <div class="pure-u-1 pure-u-md-1-3"> 
+                <h5>Interactive Viewport Gizmos</h5>
+                <p>Helpful gizmos in the interactive viewport will be created via the API to be used to do various editing tasks and speed up the workflow for things like transforms, crop and more.</p>
+            </div>
+            <div class="pure-u-1 pure-u-md-1-3">
+                <h5>Shareable Nodegraph Templates</h5>
+                <p>Preset node graph templates can be created, used and shared with others to save time setting up common node-setups for various editing tasks. These would be selectable on program launch and when creating a new project. These are different than the normal Gimel Studio Project file in that they only include the nodes pre-setup as a starting point for a project.</p>
+            </div>
+            <div class="pure-u-1 pure-u-md-1-3">
+                <h5>Vector Graphics Support</h5>
+                <p>Vector graphics support is planned via the PyCairo library. At the moment, we're not sure how much support there will be, but it is definately a goal. </p>
+            </div>
+        </div>
+    </div>
+    <div class="footer-section">
+        <h5>Be a Part of the Next Generation of Gimel Studio.</h5>
+        <a class="button-primary pure-button" href="#goals">Project Goals</a>
+        <a class="button-secondary-light pure-button">Get Involved <i class="ri-arrow-right-circle-fill"></i></a>
+        <div class="footer-icons">
+            <a href="https://github.com/GimelStudio"><i class="ri-github-fill ri-2x"></i></a>
+            <a href="https://discord.gg/RqwbDrVDpK"><i class="ri-discord-fill ri-2x"></i></a>
+            <a href="https://www.youtube.com/channel/UCP9CNtBPMPRwOR4jUiMMkhQ"><i class="ri-youtube-fill ri-2x"></i></a>
+        </div>
+        <p>Gimel Studio, node-based, non-destructive, 2D image editor focused on simplicity, speed, elegance and usability.</p>
+        <small>Website <a class="normal-link" href="https://github.com/GimelStudio/gimelstudio.github.io">source code</a> is licensed under the Apache 2.0 License. Website design is &#169; 2021, Noah Rahm and contributors.</small>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
 </html>
