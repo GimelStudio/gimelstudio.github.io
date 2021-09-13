@@ -105,7 +105,7 @@ i {
 .main-hero {
     background-color: #131828;
     padding-top: 3rem;
-    padding-bottom: 6rem;
+    padding-bottom: 4rem;
     padding-left: 5rem;
     padding-right: 5rem;
 }
@@ -119,11 +119,12 @@ i {
 
 .main-hero h1 {
     font-size: 4rem;
+    margin-bottom: 0;
 }
 
 .main-hero h2 {
     font-weight: normal;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 .button-primary {
