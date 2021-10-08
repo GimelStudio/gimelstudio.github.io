@@ -39,54 +39,70 @@
         </div>
     </div>
     <div class="main-hero">
-        <h1>Non-destructive, 2D image editor focused on simplicity, speed, elegance, and usability.</h1>
-        <h2>Join us in planning/development of the next generation of Gimel Studio to make it a truly usable tool for photographers, 3D artists, and anyone with an image to edit!</h2>
-        <a class="button-primary pure-button" href="https://github.com/GimelStudio/GimelStudio">Get Involved</a>
+        <div class="pure-g">
+            <div class="pure-u-1 pure-u-lg-3-5">
+                <h1>Non-destructive, 2D image editor focused on simplicity, speed, elegance, and usability.</h1>
+                <h2>Join us in development of the next generation of Gimel Studio to make it a truly usable tool for photographers, 3D artists, and anyone with an image to edit!</h2>
+                <a class="button-primary pure-button" href="https://github.com/GimelStudio/GimelStudio">Get Involved</a>
+            </div>
+            <div class="pure-u-1 pure-u-lg-2-5">
+                <div class="m-4 text-center">
+                    <img class="pure-img" src="img/gs-wip-demo.gif" alt="Current progress of Gimel Studio development">
+                    <small class="info">Early demo of the current progress of development as of 10/5/2021</small>
+                </div>
+            </div>
+        </div>
         <div class="pure-g section">
-            <div class="pure-u-1 pure-u-sm-1-3">
+            <div class="pure-u-1 pure-u-sm-1-4">
                 <i class="ri-open-source-line ri-3x"></i>
-                <strong>Open Source</strong>
+                <strong>100% Open Source</strong>
             </div>
-            <div class="pure-u-1 pure-u-sm-1-3">
+            <div class="pure-u-1 pure-u-sm-1-4">
                 <i class="ri-node-tree ri-3x"></i>
-                <strong>Node-Based</strong>
+                <strong>Fully Node-Based</strong>
             </div>
-            <div class="pure-u-1 pure-u-sm-1-3">
-                <i class="ri-image-2-line ri-3x"></i>
-                <strong>Image Editing</strong>
+            <div class="pure-u-1 pure-u-sm-1-4">
+                <i class="ri-cpu-line ri-3x"></i>
+                <strong>CPU + GPU Processing</strong>
+            </div>
+            <div class="pure-u-1 pure-u-sm-1-4">
+                <i class="ri-code-box-line ri-3x"></i>
+                <strong>Python Nodes API</strong>
             </div>
         </div>
     </div>
     <div class="release-section">
         <div class="pure-g">
             <div class="pure-u-1 pure-u-lg-2-5">
-                <h3>Gimel Studio v0.5.3 beta</h3>
-                <p>Try the previous version of Gimel Studio from the v0.5.x series, an experimental prototype which we hope to greatly improve upon in the next generation of Gimel Studio.</p>
-                <a class="button-primary pure-button" href="https://github.com/Correct-Syntax/Gimel-Studio/releases/tag/v0.5.3-beta">Downloads</a>
-                <a class="button-secondary pure-button" href="https://gimelstudio.readthedocs.io/en/latest/release_notes/0.5.3.html">Release Notes <i class="ri-arrow-right-circle-fill"></i></a>
+                <img class="pure-img" src="img/gimel-studio-v0.5.3-beta.png">
             </div>
             <div class="pure-u-1 pure-u-lg-3-5">
-                <img class="pure-img" src="img/gimel-studio-v0.5.3-beta.png">
+                <div class="release">
+                    <h3>Gimel Studio v0.5.3 beta</h3>
+                    <p>Try the previous version of Gimel Studio from the v0.5.x series, an experimental prototype which we hope to greatly improve upon in the next generation of Gimel Studio (MVP coming soon!).</p>
+                    <a class="button-primary pure-button" href="https://github.com/Correct-Syntax/Gimel-Studio/releases/tag/v0.5.3-beta">Downloads</a>
+                    <a class="button-secondary pure-button" href="https://gimelstudio.readthedocs.io/en/latest/release_notes/0.5.3.html">Release Notes <i class="ri-arrow-right-circle-fill"></i></a>
+                </div>
             </div>
         </div>
     </div>
     <div id="goals" class="goals-section">
         <div class="header">
             <h4>Goals for the Next Generation of Gimel Studio</h4>
-            <p>This is work-in-progress and is subject to change. Some features listed here are implemented already, either fully or in part, in the v0.5.x series of Gimel Studio</p>
+            <p>This is work-in-progress and is subject to change. Some features listed here are implemented already in the Next Generation of Gimel Studio (v0.6.x series).<br> We are working towards an MVP application which will showcase most (if not all) of the features listed (and not listed) here.</p>
         </div>
         <div class="pure-g goals">
             <div class="pure-u-1 pure-u-md-1-3">
                 <h5>Professional File Format Support</h5>
-                <p>OpenImageIO will be used for image IO in Gimel Studio and is a library for reading, writing, and processing images in a wide variety of file formats. It is used in professional, large-scale visual effects and feature film animation, and it is used ubiquitously by large VFX studios, as well as incorporated into many commercial products.</p>
+                <p>OpenImageIO is used for image IO in Gimel Studio and is a library for reading, writing, and processing images in a wide variety of file formats. It is used in professional, large-scale visual effects and feature film animation, and it is used ubiquitously by large VFX studios, as well as incorporated into many commercial products.</p>
             </div>
             <div class="pure-u-1 pure-u-md-1-3">
                 <h5>Python API for Custom Nodes</h5>
-                <p>At the core of Gimel Studio will be a powerful Python + GLSL shader API for users to script their own custom nodes. Custom nodes will be treated like plugins and will have a node manager to allow users to choose which nodes they want for their particular installation.</p>
+                <p>At the core of Gimel Studio is a powerful Python + GLSL shader API for users to script their own custom nodes. Custom nodes are treated like plugins and will have a node manager to allow users to choose which nodes the user wants for their particular installation.</p>
             </div>
             <div class="pure-u-1 pure-u-md-1-3">
                 <h5>Non-Destructive Workflow</h5>
-                <p> Gimel Studio will have a non-destructive workflow, powered by nodes — by default. A major advantage of Gimel Studio and other node-based editing tools is the possibility to always adjust the final result by editing values in any step of the process. Because each modification is stored inside a single node, you can target your changes and minimize wasted time.</p>
+                <p> Gimel Studio has a non-destructive workflow, powered via nodes — by default. A major advantage of Gimel Studio and other node-based editing tools is the possibility to always adjust the final result by editing values in any step of the process. Because each modification is stored inside a single node, you can target your changes and minimize wasted time.</p>
             </div>
         </div>
         <div class="pure-g goals">
@@ -100,7 +116,7 @@
             </div>
             <div class="pure-u-1 pure-u-md-1-3">
                 <h5>GPU and CPU Processing</h5>
-                <p>We plan to use GLSL shaders to leverage GPU and CPU processing while being seamlessly cross-platform on Windows, Linux and macOS (for 64-bit systems).</p>
+                <p>We are using GLSL shaders to leverage GPU and CPU processing while aiming to be seamlessly cross-platform on Windows, Linux and macOS (64-bit systems only).</p>
             </div>
         </div>
         <div class="pure-g goals">

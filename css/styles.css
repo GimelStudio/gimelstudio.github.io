@@ -11,6 +11,14 @@ i {
     vertical-align: sub;
 }
 
+.m-4 {
+    margin: 2rem 1rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
 .normal-link {
     color: #5974c6;
 }
@@ -111,20 +119,31 @@ i {
 }
 
 .main-hero h1,
-.main-hero h2 {
+.main-hero h2,
+.info {
     background: linear-gradient(to right, #B5C7FF, #fff);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
 }
 
 .main-hero h1 {
-    font-size: 4rem;
+    font-size: 2.6rem;
+    margin-top: 3rem;
     margin-bottom: 0;
 }
 
 .main-hero h2 {
+    font-size: 1.3rem;
     font-weight: normal;
-    margin-bottom: 2rem;
+    margin-bottom: 1.2rem;
+}
+
+.info {
+    margin: auto;
+    display: inline-block;
+    padding-top: .5rem;
+    opacity: .7;
+    font-style: italic;
 }
 
 .button-primary {
@@ -171,6 +190,7 @@ i {
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     font-weight: 400;
+    font-size: 14px;
 }
 
 /* Home Releases section */
@@ -182,8 +202,13 @@ i {
     color: #2E2D30;
 }
 
+.release-section .release {
+    margin-left: 1.8rem;
+}
+
 .release-section h3 {
     font-size: 2.5rem;
+    margin-bottom: 0;
 }
 
 .release-section p {
@@ -283,6 +308,9 @@ i {
 }
 
 @media (max-width: 47.999em) {
+    .m-4 {
+        margin: 2rem 0rem;
+    }
     .main-hero h1 {
         font-size: 2.5rem;
     }
@@ -296,6 +324,9 @@ i {
     .main-hero {
         padding-left: 1.5rem;
         padding-right: 1.5rem;
+    }
+    .main-hero .section .pure-u-1 {
+        margin-top: 1rem;
     }
     .custom-toggle {
         display: block;
